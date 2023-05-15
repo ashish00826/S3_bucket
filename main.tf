@@ -40,8 +40,8 @@ resource "aws_iam_role_policy_attachment" "my_instance_role_attachment" {
 }
 
 resource "aws_instance" "my_instance" {
-  ami           = "ami-0889a44b331db0194"  # Replace with your desired AMI ID
-  instance_type = "t2.micro"  # Replace with your desired instance type
+  ami           = "ami-0889a44b331db0194" 
+  instance_type = "t2.micro" 
 
   iam_instance_profile = aws_iam_instance_profile.my_instance_profile.name
 
