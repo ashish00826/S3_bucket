@@ -34,7 +34,7 @@ EOF
 
 resource "aws_iam_role_policy_attachment" "my_instance_role_attachment" {
   role       = "S3_Role"
-  policy_arn = "arn:aws:iam::aws:policy/AmazonS3FullAccess"  # Provides list permissions to S3
+  policy_arn = "arn:aws:iam::aws:policy/AmazonS3FullAccess"  
 
   depends_on = [aws_iam_role.my_instance_role]
 }
